@@ -4,32 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
-<body style="margin:0; font-family: Arial, Helvetica, sans-serif; background:#0d0d0d; color:white;">
+<body style="margin:0; font-family: 'Poppins' ; background:#0d0d0d; color:white;">
 
 <!-- NAVBAR -->
 <div style="display:flex; justify-content:space-between; padding:20px;">
-    <h2>ELLO</h2>
+    <h2 style="font-family:monospace;">ELLO</h2>
     <div>
+        
         <a href="index.html" style="color:white; margin:10px;">Home</a>
+        <a href="#about" style="color:white; margin:10px;">About</a>
         <a href="gallery.html" style="color:white; margin:10px;">Gallery</a>
         <a href="blog.html" style="color:white; margin:10px;">Blog</a>
         <a href="contact.html" style="color:white; margin:10px;">Contact</a>
+        
     </div>
 </div>
 
 <!-- HERO -->
-<div style="height:80vh; display:flex; align-items:center; justify-content:center; text-align:center;">
+<div style="height:100vh; display:flex; align-items:center; justify-content:center; text-align:center;">
     <div>
-        <h1 style="font-size:60px;">Hello, I'm ELLO</h1>
-        <p style="color:gray;">Web Developer & Designer</p>
+        <img src="images/profile.jpeg" 
+             style="width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom:px;">
+        <h1 style="font-size:60px;">Hello, Im ELLO
+        </h1>
+        <p style="color:gray;">Selamat datang di Personal Homepage milik saya. (masih belajar)</p>
     </div>
 </div>
 
 <!-- ABOUT -->
-<div style="padding:50px; max-width:800px; margin:auto;">
-    <h2>About Me</h2>
-    <p>Saya mahasiswa Informatika yang fokus pada pengembangan web dan desain UI/UX.</p>
+<div id="about" style="padding:50px; max-width:900px; margin:auto; display:flex; align-items:center; gap:40px;">
+
+    <!-- TEXT -->
+    <div style="flex:1;">
+        <h2 style="font-weight:600;">About Me</h2>
+        <p style="text-align: justify; color:#bbb; line-height:1.6;">
+        Halo, perkenalkan saya Marchello Andreas Lengkong. <br>Saya merupakan mahasiswa aktif di Universitas Sam Ratulangi (UNSRAT) di Program Studi Teknik Informatika, saat ini saya sudah semester 4.  Tujuan saya membuat website ini adalah untuk kebutuhan tugas kuliah saya, yaitu membuat project Personal Homepage ini. 
+        <br>Saya memiliki ketertarikan pada bidang pengembangan web dan desain antarmuka. Saat ini saya sedang mempelajari dasar-dasar teknologi web, khususnya HTML, serta memahami bagaimana membangun struktur halaman yang rapi, terorganisir, dan mudah digunakan.
+    </p>
+    </div>
+
+    <!-- IMAGE -->
+    <div style="flex:1; text-align:center;">
+        <img src="images/about.jpeg" 
+             style="width:100%; max-width:300px; border-radius:10px; object-fit:cover;">
+    </div>
 </div>
+
+<footer style="background:#0d0d0d; padding:30px; text-align:center; border-top:1px solid #222; margin-top:50px;">
+    
+    <p style="margin:5px; color:#aaa;">
+        © 2026 ELLO. All rights reserved.
+    </p>
+
+    <div style="margin-top:10px;">
+        <a href="https://www.instagram.com/ellolengkong" style="color:#aaa; margin:0 10px; text-decoration:none;">Instagram</a>
+        <a href="https://github.com/ellolengkong" style="color:#aaa; margin:0 10px; text-decoration:none;">GitHub</a>
+    </div>
+
+</footer>
+
 </body>
 </html>
