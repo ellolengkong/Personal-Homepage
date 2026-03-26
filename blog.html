@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blog</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
@@ -11,43 +12,79 @@
 
 <!-- HEADER -->
 <header style="display:flex; justify-content:space-between; padding:20px; background:#222;">
-    <a href="index.html" style="text-decoration:none; color:white; font-weight:bold; font-size:larger;">ELLO</a>
+    <a href="#" style="text-decoration:none; color:white; font-weight:bold; font-size:larger;">ELLO</a>
 
     <nav>
         <a href="index.html" style="color:white; margin:10px; text-decoration:none;">Home</a>
-        <a href="index.html#about" style="color:white; margin:10px; text-decoration:none;">About</a>
+        <a href="#about" style="color:white; margin:10px; text-decoration:none;">About</a>
         <a href="gallery.html" style="color:white; margin:10px; text-decoration:none;">Gallery</a>
         <a href="blog.html" style="color:white; margin:10px; text-decoration:none;">Blog</a>
         <a href="contact.html" style="color:white; margin:10px; text-decoration:none;">Contact</a>
     </nav>
 </header>
+
+<!-- MAIN -->
 <main style="max-width:900px; margin:auto; padding:40px;">
 
-<!-- TITLE -->
-    <section style="text-align:center; padding:40px;">
+    <!-- TITLE -->
+    <section style="text-align:center; margin-bottom:50px;">
         <h1 style="font-size:40px;">Blog</h1>
-        <p style="color:#aaa;">Kumpulan Blog/Artikel mengenai IT</p>
+        <p style="color:#aaa;">Artikel seputar teknologi dan pembelajaran saya</p>
     </section>
 
-<!-- Artikel 1 -->
-<div style="margin-bottom:30px;">
-    <h2><a href="article/artikel1.html" style="color:white;">Pengertian HTML dan Perannya dalam Web</a></h2>
-    <p style="color:#aaa;">Penjelasan dasar tentang HTML dan fungsinya dalam pengembangan website.</p>
-</div>
+    <!-- ARTIKEL 1 -->
+    <article style="margin-bottom:50px;">
+        <h2>Pengertian HTML dan Perannya dalam Web</h2>
+        <p style="color:#bbb; line-height:1.7;">
+            HTML (HyperText Markup Language) bukan sekadar bahasa pemrograman, melainkan tulang punggung atau "kerangka" dari setiap halaman web yang kita akses saat ini. Sebagai bahasa markup, HTML bertugas memberikan struktur pada konten melalui sistem nesting atau penyusunan tag. Tanpa HTML, browser tidak akan memiliki panduan untuk membedakan mana yang harus dianggap sebagai judul (heading), paragraf, gambar, maupun navigasi. <br><br>Dalam perkembangannya, standar HTML5 telah membawa revolusi besar dengan memperkenalkan elemen semantik seperti article, section, dan nav. Penggunaan elemen ini tidak hanya mempermudah pengembang dalam menyusun kode yang rapi, tetapi juga sangat krusial bagi optimasi mesin pencari (SEO) dan teknologi asistif (seperti screen reader) untuk memahami struktur halaman secara lebih bermakna. Sebagai fondasi awal dalam web development, penguasaan HTML yang kuat adalah syarat mutlak sebelum melangkah ke aspek estetika dengan CSS atau interaktivitas melalui JavaScript.
+        </p>
 
-<!-- Artikel 2 -->
-<div style="margin-bottom:30px;">
-    <h2><a href="article/artikel2.html" style="color:white;">Pentingnya UI/UX dalam Website</a></h2>
-    <p style="color:#aaa;">Mengapa desain dan pengalaman pengguna sangat penting.</p>
-</div>
+        <p style="color:#888;">
+            Sumber:
+            <br>
+            <a href="https://developer.mozilla.org/id/docs/Web/HTML" target="_blank" style="color:#aaa;">MDN Web Docs</a><br>
+            <a href="https://www.w3schools.com/html/" target="_blank" style="color:#aaa;">W3Schools</a>
+        </p>
+    </article>
 
-<!-- Artikel 3 -->
-<div style="margin-bottom:30px;">
-    <h2><a href="article/artikel3.html" style="color:white;">Perkembangan Teknologi Web</a></h2>
-    <p style="color:#aaa;">Bagaimana web berkembang dan tren saat ini.</p>
-</div>
+    <hr style="border:1px solid #222;">
+
+    <!-- ARTIKEL 2 -->
+    <article style="margin:50px 0;">
+        <h2>Pentingnya UI/UX dalam Pengembangan Website</h2>
+        <p style="color:#bbb; line-height:1.7;">
+            Banyak orang sering menyamakan UI (User Interface) dan UX (User Experience), padahal keduanya memiliki peran yang berbeda namun saling melengkapi dalam pengembangan produk digital. UI berfokus pada apa yang dilihat oleh mata—mulai dari pemilihan tipografi, palet warna, konsistensi ikon, hingga tata letak tombol. Tujuan utamanya adalah menciptakan estetika yang menarik dan kejelasan visual agar pengguna nyaman menatap layar. <br><br>Di sisi lain, UX berfokus pada apa yang dirasakan oleh pengguna saat berinteraksi dengan sistem. UX melibatkan riset mendalam tentang perilaku pengguna (user behavior), kemudahan navigasi (usability), hingga efisiensi dalam menyelesaikan sebuah tugas di dalam aplikasi. Sebuah website dengan UI yang memukau namun memiliki alur yang membingungkan akan membuat pengguna merasa frustrasi. Sebaliknya, sistem yang fungsional tanpa desain visual yang rapi seringkali dianggap kurang profesional. Kunci keberhasilan website modern terletak pada keseimbangan antara visual yang memanjakan mata dan pengalaman yang intuitif bagi penggunanya.
+        </p>
+
+        <p style="color:#888;">
+            Sumber:
+            <br>
+            <a href="https://www.interaction-design.org/literature/topics/ux-design" target="_blank" style="color:#aaa;">Interaction Design Foundation</a><br>
+            <a href="https://www.nngroup.com/articles/definition-user-experience/" target="_blank" style="color:#aaa;">Nielsen Norman Group</a>
+        </p>
+    </article>
+
+    <hr style="border:1px solid #222;">
+
+    <!-- ARTIKEL 3 -->
+    <article style="margin-bottom:50px;"> 
+        <h2>OpenAI Menghentikan Sora untuk Fokus pada Robotika</h2> 
+        <p style="color:#bbb; line-height:1.7;"> Dunia teknologi baru-baru ini dikejutkan dengan kabar bahwa OpenAI memutuskan untuk menghentikan sementara pengembangan Sora, model text-to-video mereka yang sangat fenomenal. Keputusan strategis ini diambil demi mengalihkan fokus dan sumber daya perusahaan ke bidang riset robotika yang lebih kompleks. Langkah ini menandakan pergeseran visi OpenAI dari sekadar menghasilkan konten digital (AI Generatif) menuju penciptaan sistem cerdas yang mampu berinteraksi secara fisik dengan dunia nyata.<br><br>Integrasi kecerdasan buatan ke dalam perangkat keras (hardware) melalui robotika dianggap memiliki urgensi yang lebih tinggi untuk memecahkan tantangan di berbagai sektor, seperti manufaktur, logistik, hingga perawatan kesehatan. Riset ini bertujuan agar AI tidak hanya menjadi "otak" di balik layar komputer, tetapi juga memiliki "tubuh" yang mampu melakukan tugas-tugas fisik secara presisi dan aman. Meskipun Sora menunjukkan potensi luar biasa dalam industri kreatif, OpenAI nampaknya lebih memprioritaskan teknologi yang memiliki dampak langsung pada otomatisasi fisik dan bantuan nyata bagi manusia di lingkungan kerja sehari-hari. </p>
+        <p style="color:#888;"> Sumber: <br> <a href="https://www.kompasiana.com/syahrummubarak8665/69c4175c34777c73f0022ba2/openai-resmi-hentikan-sora-demi-riset-robotika" target="_blank" style="color:#aaa;"> Kompasiana </a> 
+        </p> 
+    </article>
 
 </main>
+
+<!-- FOOTER -->
+<footer style="background:#0d0d0d; padding:30px; text-align:center; border-top:1px solid #222;">
+    <p style="color:#aaa;">© 2026 ELLO. All rights reserved.</p>
+
+    <div style="margin-top:10px;">
+        <a href="https://www.instagram.com/ellolengkong" style="color:#aaa; margin:0 10px;">Instagram</a>
+        <a href="https://github.com/ellolengkong" style="color:#aaa; margin:0 10px;">GitHub</a>
+    </div>
+</footer>
 
 </body>
 </html>
