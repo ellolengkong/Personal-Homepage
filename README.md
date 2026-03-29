@@ -15,7 +15,7 @@ Website dapat diakses secara langsung melalui GitHub Pages:
 
 - [x] Menggunakan teknik-teknik HTML/HTML5.
 - [x] Memiliki minimal halaman: Home, Gallery, Blog, Contact.
-- [x] **Tanpa** library atau framework apapun (Pure HTML/CSS).
+- [x] **Tanpa** library atau framework apapun (Pure HTML).
 - [x] Dikelola menggunakan Git dan dideploy ke GitHub Pages.
 
 _Dibuat untuk memenuhi tugas Project.01-HTML 2026._
