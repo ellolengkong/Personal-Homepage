@@ -1,83 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Homepage</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio of Marchello Andreas Lengkong — Informatics Engineering student, creative coder, and cinema enthusiast." />
+  <title>Ello — Portfolio</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body style="margin:0; font-family:'Poppins', sans-serif; background:#0d0d0d; color:white;">
+<body>
 
-<!-- HEADER -->
-<header style="display:flex; justify-content:space-between; padding:20px; background:#222;">
-    <a href="#" style="text-decoration:none; color:white; font-weight:bold; font-size:larger;">ELLO</a>
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <header id="site-header">
+    <nav class="navbar">
+      <a href="#" class="nav-logo">ello<span class="dot">.</span></a>
 
-    <nav>
-        <a href="index.html" style="color:white; margin:10px; text-decoration:none;">Home</a>
-        <a href="#about" style="color:white; margin:10px; text-decoration:none;">About</a>
-        <a href="gallery.html" style="color:white; margin:10px; text-decoration:none;">Gallery</a>
-        <a href="blog.html" style="color:white; margin:10px; text-decoration:none;">Blog</a>
-        <a href="contact.html" style="color:white; margin:10px; text-decoration:none;">Contact</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<!-- MAIN CONTENT -->
-<main>
 
-    <!-- HERO -->
-    <section style="height:80vh; display:flex; align-items:center; justify-content:center; text-align:center;">
-        <div>
-            <img src="images/profile.jpeg"
-                 style="width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom:20px;">
+  <!-- ═══════════════════════════════════════════
+       SECTION 1 — HERO
+  ═══════════════════════════════════════════ -->
+  <section id="home" class="section hero-section">
+    <div class="container hero-grid">
 
-            <h1 style="font-size:60px;">Hello, I'm ELLO</h1>
-            <p style="color:gray;">Selamat datang di Personal Homepage saya 😁.<br>
-            Website ini masih dalam tahap pengembangan, jadi kalau ada kritik dan saran bisa kontak saya. <br>
-            Terimakasih 🙏
-            </p>
+      <!-- Profile photo with glow + floating animation -->
+      <div class="hero-image-wrapper reveal">
+        <div class="profile-glow"></div>
+        <img src="images/profile.jpeg" alt="Profile photo of Marchello Andreas Lengkong" class="profile-photo" />
+      </div>
+
+      <div class="hero-text reveal">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Marchello Andreas<br />Lengkong</h1>
+
+        <!-- Typing animation headline -->
+        <p class="hero-tagline">
+          <span id="typed-text" class="typed"></span><span class="cursor">|</span>
+        </p>
+
+        <p class="hero-subtitle">
+          Informatics Engineering Student &bull; Creative Coder
+        </p>
+
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="#about" class="btn btn-outline">Learn More</a>
         </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" style="padding:50px; max-width:900px; margin:auto; display:flex; align-items:center; gap:40px;">
-
-        <!-- TEXT -->
-        <article style="flex:1;">
-            <h2 style="font-weight:600;">About Me</h2>
-            <p style="text-align:justify; color:#bbb; line-height:1.6;">
-                Halo, perkenalkan saya Marchello Andreas Lengkong, biasa dipanggil <b>ello</b>. <br><br>
-                Saya merupakan mahasiswa aktif di Universitas Sam Ratulangi (UNSRAT) Program Studi Teknik Informatika, saat ini saya sudah semester 4. Tujuan saya membuat website ini adalah untuk kebutuhan tugas kuliah saya, yaitu membuat project Personal Homepage ini.
-                <br><br>
-                Saya memiliki ketertarikan pada bidang pengembangan web dan desain antarmuka. Saat ini saya sedang mempelajari dasar-dasar teknologi web, khususnya HTML, serta memahami bagaimana membangun struktur halaman yang rapi, terorganisir, dan mudah digunakan.<br><br>
-                Saya juga aktif dalam kegiatan-kegiatan di gereja, sebagai contoh saya aktif dalam mengikut lomba CCA dan puji Tuhan bisa mendapat juara di beberapa lomba tersebut.<br><br>
-            </p>
-        </article>
-
-        <!-- IMAGE -->
-        <aside style="flex:1; text-align:center;">
-            <img src="images/about.jpeg"
-                 style="width:100%; max-width:300px; border-radius:10px; object-fit:cover;">
-        </aside>
-
-    </section>
-
-</main>
-
-<!-- FOOTER -->
-<footer style="background:#0d0d0d; padding:30px; text-align:center; border-top:1px solid #222; margin-top:50px;">
-    
-    <p style="margin:5px; color:#aaa;">
-        © 2026 ELLO. All rights reserved.
-    </p>
-
-    <div style="margin-top:10px;">
-        <a href="https://www.instagram.com/ellolengkong" style="color:#aaa; margin:0 10px; text-decoration:none;">Instagram</a>
-        <a href="https://github.com/ellolengkong" style="color:#aaa; margin:0 10px; text-decoration:none;">GitHub</a>
+      </div>
     </div>
 
-</footer>
+    <!-- Decorative scroll indicator -->
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 2 — ABOUT ME
+  ═══════════════════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-label reveal">About</p>
+      <h2 class="section-title reveal">A little bit about me</h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Halo! Saya <strong>Marchello Andreas Lengkong</strong>, yang akrab disapa <strong>Ello atau Cello</strong>.
+            Saat ini, saya adalah mahasiswa semester 4
+            Program Studi Teknik Informatika di Universitas Sam Ratulangi (UNSRAT). Berdomisili di Kembes, Sulawesi
+            Utara,
+            saya membangun website ini sebagai bagian dari tugas kuliah sekaligus wadah untuk mengekspresikan diri
+            melalui
+            Personal Homepage.
+          </p>
+          <p>
+            Saya memiliki ketertarikan besar pada pengembangan web dan desain antarmuka (UI/UX). Saat ini, saya fokus
+            mendalami
+            struktur teknologi web seperti HTML dan juga CSS dan JavaScript untuk menciptakan halaman yang rapi,
+            terorganisir, dan fungsional.
+          </p>
+          <p>
+            Di luar dunia perkodingan, saya adalah seorang pencinta film dan seorang gamer yang menikmati berbagai jenis
+            permainan. Akhir-akhir ini, saya sedang banyak menghabiskan waktu di game bergenre Sandbox maupun MOBA.
+            Selain itu, saya memiliki rasa ingin tahu yang tinggi untuk mempelajari hal-hal baru dan merupakan seorang
+            rubik enthusiast. Di samping kesibukan akademik, saya juga aktif dalam kegiatan gereja, khususnya dalam
+            lomba Cerdas Cermat Alkitab (CCA), di mana saya bersyukur telah meraih beberapa prestasi di bidang tersebut.
+          </p>
+
+
+
+
+
+
+        </div>
+
+        <div class="about-details reveal">
+          <h3 class="about-details-title">What I work with</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <!-- <span class="skill-tag">PHP</span> -->
+            <!-- <span class="skill-tag">MySQL</span> -->
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+
+          <h3 class="about-details-title" style="margin-top:2rem;">Interests</h3>
+          <div class="interest-list">
+            <div class="interest-item">
+              <span class="interest-icon">🎬</span>
+              <span>Movie Lover</span>
+            </div>
+            <div class="interest-item">
+              <span class="interest-icon">💻</span>
+              <span>Web Development</span>
+            </div>
+            <div class="interest-item">
+              <span class="interest-icon">🎮</span>
+              <span>Sandbox & Strategy Games</span>
+            </div>
+            <div class="interest-item">
+              <span class="interest-icon">🧊</span>
+              <span>Rubic enthusiast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 3 — PROJECTS 
+  ═══════════════════════════════════════════ -->
+
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="section-label reveal">Work</p>
+      <h2 class="section-title reveal">Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-card-image">
+            <img src="images/kfc.png" alt="Project screenshot" loading="lazy" />
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">SQL</span>
+            </div>
+            <h3 class="project-card-title">KFC (Kantin Fisip Coy) – Real-Time Digital Menu & Inventory System</h3>
+            <p class="project-card-desc">
+              Aplikasi web real-time untuk mendigitalisasi operasional Kantin Fisip Coy. Dibangun sepenuhnya dengan
+              Vanilla JavaScript untuk performa maksimal, terintegrasi dengan Supabase untuk manajemen stok instan dan
+              pembaruan menu langsung ke pelanggan tanpa perlu refresh halaman
+            </p>
+            <div class="project-card-links">
+              <a href="https://kantinfisipcoy.netlify.app/" class="btn btn-sm btn-primary" target="_blank"
+                rel="noopener">Link Website</a>
+              <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener">Source Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 4 — GALLERY (with Album Tabs)
+  ═══════════════════════════════════════════ -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <p class="section-label reveal">Visual</p>
+      <h2 class="section-title reveal">Gallery</h2>
+
+      <!-- Album filter tabs -->
+      <div class="gallery-filters reveal" id="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="achievements">Achievements</button>
+        <button class="filter-btn" data-filter="campus">Campus</button>
+        <button class="filter-btn" data-filter="personal">Personal</button>
+      </div>
+
+      <div class="gallery-grid reveal" id="gallery-grid">
+        <!-- ── Achievements ── -->
+        <div class="gallery-item" data-album="achievements">
+          <img src="images/7.jpeg" alt="Juara 2 CCPG 2025" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>View</span>
+            <p class="gallery-caption">Juara 2 CCPG 2025</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-album="achievements">
+          <img src="images/8.jpg" alt="Juara 1 CCA Pembina" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>View</span>
+            <p class="gallery-caption">Juara 1 CCA Pembina</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-album="achievements">
+          <img src="images/9.jpg" alt="Sertifikat Lomba" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>View</span>
+            <p class="gallery-caption">Juara 2 CCA Umum</p>
+          </div>
+        </div>
+
+        <!-- ── Campus ── -->
+        <div class="gallery-item reveal" data-album="campus">
+          <img src="images/14.png" alt="" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>View</span>
+            <p class="gallery-caption">Pendampingan dengan Mitra Kewirausahaan</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-album="campus">
+          <img src="images/13.png" alt="Suasana Kuliah" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>View</span>
+            <p class="gallery-caption">Wawancara dengan Mitra Kewirausahaan</p>
+          </div>
+        </div>
+
+        <!-- ── Personal ── -->
+        <div class="gallery-item reveal" data-album="personal">
+          <img src="images/2.jpeg" alt="Fotbar di gereja pt1" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>View</span>
+            <p class="gallery-caption">Fotbar di gereja pt1</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-album="personal">
+          <img src="images/3.jpeg" alt="❤️" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>View</span>
+            <p class="gallery-caption">❤️</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-album="personal">
+          <img src="images/4.jpeg" alt="Fotbar di gereja pt2" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>View</span>
+            <p class="gallery-caption">Fotbar di gereja pt2</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal (hidden by default) -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" aria-label="Previous image">&#10094;</button>
+    <img id="lightbox-img" src="" alt="Lightbox image" />
+    <button class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Next image">&#10095;</button>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 5 — BLOG
+       Articles sourced from real web publications.
+       "Read More" links directly to the original article.
+  ═══════════════════════════════════════════ -->
+  <section id="blog" class="section">
+    <div class="container">
+      <p class="section-label reveal">Insights</p>
+      <h2 class="section-title reveal">Blog</h2>
+
+      <div class="blog-grid">
+
+        <!-- Article 1 — Technology / AI -->
+        <article class="blog-card reveal" id="blog-post-1">
+          <a href="https://www.cnnindonesia.com/teknologi/20260325111202-185-1341086/openai-tiba-tiba-tutup-sora-aplikasi-video-ai-yang-sempat-viral"
+            class="blog-card-image-link" target="_blank" rel="noopener noreferrer">
+            <img src="images/blog1.jpeg" alt="OpenAI Sora" class="blog-card-image" loading="lazy" />
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-tag">Teknologi</div>
+            <h3 class="blog-card-title">OpenAI Tiba-tiba Tutup Sora, Aplikasi Video AI yang Sempat Viral</h3>
+            <p class="blog-card-excerpt">
+              OpenAI resmi menutup Sora, aplikasi video berbasis kecerdasan buatan (AI). Keputusan ini
+              mengejutkan dan tanpa ada penjelasan dari perusahaan. Kabar ini juga berdampak pada rencana
+              kerjasama dengan Disney yang sebelumnya sempat dibahas.
+            </p>
+            <div class="blog-card-footer">
+              <time class="blog-card-date" datetime="2026-03-25">25 Maret 2026</time>
+              <a href="https://www.cnnindonesia.com/teknologi/20260325111202-185-1341086/openai-tiba-tiba-tutup-sora-aplikasi-video-ai-yang-sempat-viral"
+                class="blog-read-more" target="_blank" rel="noopener noreferrer">
+                Read Article &rarr;
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2 — Sport -->
+        <article class="blog-card reveal" id="blog-post-2">
+          <a href="https://sport.detik.com/sepakbola/liga-inggris/d-8472896/mu-vs-liverpool-drama-5-gol-setan-merah-menang-3-2"
+            class="blog-card-image-link" target="_blank" rel="noopener noreferrer">
+            <img src="images/blog2.jpeg" alt="MU vs Liverpool" class="blog-card-image" loading="lazy" />
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-tag">Sport</div>
+            <h3 class="blog-card-title">MU Vs Liverpool: Drama 5 Gol! Setan Merah Menang 3-2</h3>
+            <p class="blog-card-excerpt">
+              Drama lima gol terjadi di laga Manchester United vs Liverpool pada North-West Derby
+              di Old Trafford. Gol kemenangan dicetak oleh Kobbie Mainoo untuk memastikan Setan
+              Merah menang 3-2 setelah sempat unggul 2-0 di babak pertama.
+            </p>
+            <div class="blog-card-footer">
+              <time class="blog-card-date" datetime="2026-05-03">3 Mei 2026</time>
+              <a href="https://sport.detik.com/sepakbola/liga-inggris/d-8472896/mu-vs-liverpool-drama-5-gol-setan-merah-menang-3-2"
+                class="blog-read-more" target="_blank" rel="noopener noreferrer">
+                Read Article &rarr;
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 3 — Ekonomi -->
+        <article class="blog-card reveal" id="blog-post-3">
+          <a href="https://www.cnnindonesia.com/ekonomi/20260504105716-85-1354800/pertamina-ungkap-alasan-naikkan-harga-bbm-per-hari-ini"
+            class="blog-card-image-link" target="_blank" rel="noopener noreferrer">
+            <img src="images/blog3.jpeg" alt="SPBU Pertamina" class="blog-card-image" loading="lazy" />
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-tag">Ekonomi</div>
+            <h3 class="blog-card-title">Pertamina Ungkap Alasan Naikkan Harga BBM per Hari Ini</h3>
+            <p class="blog-card-excerpt">
+              PT Pertamina Patra Niaga mengungkap alasan kenaikan harga BBM non-subsidi seperti
+              Pertamina Dex, Dexlite, dan Pertamax Turbo, yang dipicu oleh penyesuaian harga
+              minyak dunia dan nilai tukar rupiah.
+            </p>
+            <div class="blog-card-footer">
+              <time class="blog-card-date" datetime="2026-05-04">4 Mei 2026</time>
+              <a href="https://www.cnnindonesia.com/ekonomi/20260504105716-85-1354800/pertamina-ungkap-alasan-naikkan-harga-bbm-per-hari-ini"
+                class="blog-read-more" target="_blank" rel="noopener noreferrer">
+                Read Article &rarr;
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 6 — CONTACT & PERSONAL DATA
+  ═══════════════════════════════════════════ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <p class="section-label reveal">Connect</p>
+      <h2 class="section-title reveal">Get in Touch</h2>
+
+      <div class="contact-grid">
+
+        <!-- Contact Form with floating labels -->
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-group">
+            <input type="text" id="form-name" name="name" placeholder=" " required autocomplete="name" />
+            <label for="form-name">Your Name</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="form-email" name="email" placeholder=" " required autocomplete="email" />
+            <label for="form-email">Your Email</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="form-group">
+            <textarea id="form-message" name="message" rows="4" placeholder=" " required></textarea>
+            <label for="form-message">Your Message</label>
+            <span class="form-line"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit" id="form-submit">
+            <span>Send Message</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 2L11 13"></path>
+              <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+            </svg>
+          </button>
+          <p class="form-feedback" id="form-feedback"></p>
+        </form>
+
+        <!-- Student Profile Card -->
+        <div class="profile-card reveal">
+          <div class="profile-card-header">
+            <div class="profile-card-avatar">
+              <img src="images/profile.jpeg" alt="Ello" />
+            </div>
+            <div>
+              <h3 class="profile-card-name">Marchello Andreas Lengkong</h3>
+              <p class="profile-card-role">Informatics Engineering Student</p>
+            </div>
+          </div>
+
+          <div class="profile-card-divider"></div>
+
+          <ul class="profile-card-list">
+            <li>
+              <span class="profile-label">Full Name</span>
+              <span class="profile-value">Marchello Andreas Lengkong</span>
+            </li>
+            <li>
+              <span class="profile-label">Nickname</span>
+              <span class="profile-value">Ello / Cello</span>
+            </li>
+            <li>
+              <span class="profile-label">Student ID (NIM)</span>
+              <span class="profile-value">240211060045</span>
+            </li>
+            <li>
+              <span class="profile-label">Program</span>
+              <span class="profile-value">Informatics Engineering (Teknik Informatika)</span>
+            </li>
+            <li>
+              <span class="profile-label">University</span>
+              <span class="profile-value">Universitas Sam Ratulangi (UNSRAT)</span>
+            </li>
+            <li>
+              <span class="profile-label">Location</span>
+              <span class="profile-value">Kembes</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#" class="nav-logo footer-logo">ello<span class="dot">.</span></a>
+
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/ellolengkong/" target="_blank" rel="noopener noreferrer"
+          aria-label="Instagram" class="social-link">
+          <!-- Instagram SVG logo -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="https://github.com/ellolengkong" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+          class="social-link">
+          <!-- GitHub SVG logo -->
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">&copy; 2025 Marchello Andreas Lengkong. Built with vanilla HTML, CSS &amp; JS.</p>
+
+      <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+          stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
